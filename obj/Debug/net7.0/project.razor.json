@@ -18675,8 +18675,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/zoart/dev/charp/core/study/Views/MyView.cshtml",
-      "TargetPath": "Views\\MyView.cshtml",
+      "FilePath": "/home/zoart/dev/charp/core/study/Views/Home/ListResponses.cshtml",
+      "TargetPath": "Views\\Home\\ListResponses.cshtml",
       "FileKind": "mvc"
     },
     {

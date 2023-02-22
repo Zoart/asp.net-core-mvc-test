@@ -24,7 +24,7 @@ public class HomeController : Controller
         return View("Thanks", guestResponce);
     }
 
-    public ViewResult ListResponces() {
-        return View(Repository.Responces.Where(r => r.WillAttend == true)); // Linq
+    public ViewResult ListResponses() {
+        return View(Repository.Responses.Where(r => r.WillAttend == true)); // Linq
     }
 }

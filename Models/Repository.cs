@@ -7,15 +7,15 @@ namespace study.Models
 {
     public class Repository
     {
-        private static List<GuestResponce> responces = new List<GuestResponce>();
-        public static IEnumerable<GuestResponce> Responces {
+        private static List<GuestResponce> responses = new List<GuestResponce>();
+        public static IEnumerable<GuestResponce> Responses {
             get {
-                return responces;
+                return responses;
             }
         }
 
         public static void AddResponse(GuestResponce responce) {
-            responces.Add(responce);
+            responses.Add(responce);
         }
         
     }
