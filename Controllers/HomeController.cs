@@ -20,8 +20,14 @@ public class HomeController : Controller
 
     [HttpPost]
     public ViewResult RsvpForm(GuestResponce guestResponce) {
-        Repository.AddResponse(guestResponce);
-        return View("Thanks", guestResponce);
+        if (ModelState.IsValid) {
+            Repository.AddResponse(guestResponce);
+            return View("Thanks", guestResponce);
+        }
+        else {
+            // Validation error
+            return View();
+        }
     }
 
     public ViewResult ListResponses() {
